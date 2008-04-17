@@ -24,6 +24,8 @@ module Classifier
   # data based on underlying semantic relations. For more information on the algorithms used,
   # please consult Wikipedia[http://en.wikipedia.org/wiki/Latent_Semantic_Indexing].
   class LSI
+
+    include GSL if $GSL
     
     attr_reader :word_list
     attr_accessor :auto_rebuild
